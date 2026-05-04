@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>IP Table</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Seção 1: Tabela inicial (Figura 1) -->
+    <section>
+        <h2>Figura 1 – IP Table Inicial</h2>
+        <table id="table1">
+            <thead>
+                <tr><th>IP</th><th>Mask</th><th>Version</th></tr>
+            </thead>
+            <tbody>
+                <!-- Inicialmente vazia -->
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Seção 2: Formulário para adicionar IP (Figura 2) -->
+    <section>
+        <h2>Figura 2 – Cadastro de Novo IP</h2>
+        <form id="ipForm">
+            <input type="text" id="ip" placeholder="IP" required>
+            <input type="text" id="mask" placeholder="Mask" required>
+            <input type="text" id="version" placeholder="Version" required>
+            <button type="submit">Add</button>
+        </form>
+    </section>
+
+    <!-- Seção 3: Tabela final com ações (Figura 3) -->
+    <section>
+        <h2>Figura 3 – IP Table Atualizada</h2>
+        <table id="table3">
+            <thead>
+                <tr><th>IP</th><th>Mask</th><th>Version</th><th>Actions</th></tr>
+            </thead>
+            <tbody>
+                <!-- Linhas adicionadas dinamicamente -->
+            </tbody>
+        </table>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
